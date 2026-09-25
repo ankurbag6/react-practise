@@ -27,6 +27,7 @@ Then open the URL Vite prints (usually http://localhost:5173).
 | `npm run build` | Build for production into `dist/` |
 | `npm run preview` | Serve the production build locally |
 | `npm run lint` | Run ESLint |
+| `npm test` | Run tests with Vitest in watch mode |
 
 ## Project structure
 
