@@ -4,13 +4,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 import Counter from './components/Counter'
+import Details from './components/Details'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <Counter />
+      {/* <Counter /> */}
+      <Details />
     </>
   )
 }
