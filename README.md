@@ -10,13 +10,15 @@ Each exercise is a timed drill. The drill brief sits in a comment at the top of 
 | --- | --- | --- | --- |
 | 1 | [Counter](src/components/Counter.jsx) | `useState`, functional state updates, controlled inputs. Increment/decrement by a configurable step; the count never goes below 0 and the step is at least 1. | [Counter.test.jsx](src/components/Counter.test.jsx) |
 | 2 | [Details](src/components/Details.jsx) | Show/hide toggle driven by one piece of state. Conditional rendering vs. CSS `display: none`, `aria-expanded` and `aria-controls`. | [Details.test.jsx](src/components/Details.test.jsx) |
-| 3 | [ProductList](src/components/ProductList.jsx) | Rendering a list from an array prop with stable keys, currency formatting, an "Out of stock" badge, an empty state and a product count. | — |
-| 4 | [NameCard](src/components/NameCard.jsx) | Controlled text input with a live "Hello, {name}!" preview, whitespace trimming in the preview only, a 20-character limit with a counter, and a connected label. | — |
+| 3 | [ProductList](src/components/ProductList.jsx) | Rendering a list from an array prop with stable keys, currency formatting, an "Out of stock" badge, an empty state and a product count. | [ProductList.test.jsx](src/components/ProductList.test.jsx) |
+| 4 | [NameCard](src/components/NameCard.jsx) | Controlled text input with a live "Hello, {name}!" preview, whitespace trimming in the preview only, a 20-character limit with a counter, and a connected label. | [NameCard.test.jsx](src/components/NameCard.test.jsx) |
 
 Shared helpers live in [src/utils/helper.js](src/utils/helper.js):
 
 - `formatPrice(value)` formats a number as USD, e.g. `19.5` → `$19.50`.
 - `trimInput(value)` trims a string and collapses repeated whitespace, e.g. `"  Ankur   Bag "` → `"Ankur Bag"`.
+
+Both are covered by [helper.test.js](src/utils/helper.test.js).
 
 ## Getting started
 
@@ -58,4 +60,4 @@ To add a new exercise, create a component in `src/components/` (with the drill b
 
 ## Testing
 
-Tests use [Vitest](https://vitest.dev) with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) and `user-event`, running in jsdom. Test files sit next to the component they cover and are named `*.test.jsx`.
+Tests use [Vitest](https://vitest.dev) with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) and `user-event`, running in jsdom. Test files sit next to the component they cover and are named `*.test.jsx` (or `*.test.js` for plain helpers).
