@@ -7,6 +7,7 @@ import Counter from "./components/Counter";
 import Details from "./components/Details";
 import ProductList from "./components/ProductList";
 import NameCard from "./components/NameCard";
+import EventsDemo from "./components/EventsDemo";
 
 function App() {
   const products = [
@@ -19,7 +20,8 @@ function App() {
       {/* <Counter /> */}
       {/* <Details /> */}
       {/* <ProductList products={products} /> */}
-      <NameCard />
+      {/* <NameCard /> */}
+      <EventsDemo />
     </>
   );
 }
