@@ -8,6 +8,8 @@ import Details from "./components/Details";
 import ProductList from "./components/ProductList";
 import NameCard from "./components/NameCard";
 import EventsDemo from "./components/EventsDemo";
+import PlayerPicker from "./components/PlayerPicker";
+import Calculator from "./components/Calculator";
 
 function App() {
   const products = [
@@ -21,7 +23,9 @@ function App() {
       {/* <Details /> */}
       {/* <ProductList products={products} /> */}
       {/* <NameCard /> */}
-      <EventsDemo />
+      {/* <EventsDemo /> */}
+      {/* <PlayerPicker /> */}
+      <Calculator />
     </>
   );
 }
