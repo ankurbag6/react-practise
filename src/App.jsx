@@ -10,6 +10,7 @@ import NameCard from "./components/NameCard";
 import EventsDemo from "./components/EventsDemo";
 import PlayerPicker from "./components/PlayerPicker";
 import Calculator from "./components/Calculator";
+import Board from "./components/tic-tac-toe/Board";
 
 function App() {
   const products = [
@@ -25,7 +26,8 @@ function App() {
       {/* <NameCard /> */}
       {/* <EventsDemo /> */}
       {/* <PlayerPicker /> */}
-      <Calculator />
+      {/* <Calculator /> */}
+      <Board />
     </>
   );
 }
