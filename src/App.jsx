@@ -11,6 +11,7 @@ import EventsDemo from "./components/EventsDemo";
 import PlayerPicker from "./components/PlayerPicker";
 import Calculator from "./components/Calculator";
 import Board from "./components/tic-tac-toe/Board";
+import Grid from "./components/grid-light/Grid";
 
 function App() {
   const products = [
@@ -27,7 +28,8 @@ function App() {
       {/* <EventsDemo /> */}
       {/* <PlayerPicker /> */}
       {/* <Calculator /> */}
-      <Board />
+      {/* <Board /> */}
+      <Grid />
     </>
   );
 }
