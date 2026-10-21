@@ -12,6 +12,7 @@ import PlayerPicker from "./components/PlayerPicker";
 import Calculator from "./components/Calculator";
 import Board from "./components/tic-tac-toe/Board";
 import Grid from "./components/grid-light/Grid";
+import FAQComponent from "./components/FAQ/FAQComponent";
 
 function App() {
   const products = [
@@ -19,6 +20,20 @@ function App() {
     { id: "p2", name: "Mouse", price: 19.5, inStock: false },
     { id: "p3", name: "Monitor", price: 189, inStock: true },
   ];
+  const FAQ = [
+  {
+    question: "How many bones does a cat have?",
+    answer: "A cat has 230 bones - 6 more than a human",
+  },
+  {
+    question: "How much do cats sleep?",
+    answer: "The average cat sleeps 12-16 hours per day",
+  },
+  {
+    question: "How long do cats live",
+    answer: "Outdoor cats live 5 years on average. Indoor cats live 15 years on average.",
+  },
+];
   return (
     <>
       {/* <Counter /> */}
@@ -29,7 +44,8 @@ function App() {
       {/* <PlayerPicker /> */}
       {/* <Calculator /> */}
       {/* <Board /> */}
-      <Grid />
+      {/* <Grid /> */}
+      <FAQComponent questions={FAQ} />
     </>
   );
 }
