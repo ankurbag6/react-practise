@@ -13,6 +13,7 @@ import Calculator from "./components/Calculator";
 import Board from "./components/tic-tac-toe/Board";
 import Grid from "./components/grid-light/Grid";
 import FAQComponent from "./components/FAQ/FAQComponent";
+import Users from "./components/Users/Users";
 
 function App() {
   const products = [
@@ -45,7 +46,9 @@ function App() {
       {/* <Calculator /> */}
       {/* <Board /> */}
       {/* <Grid /> */}
-      <FAQComponent questions={FAQ} />
+      {/* <FAQComponent questions={FAQ} /> */}
+
+      <Users />
     </>
   );
 }
